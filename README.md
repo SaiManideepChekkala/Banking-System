@@ -1,25 +1,19 @@
 # 💳 Bank Management System
 
-## 📌 Description:
-This is a C language mini-project that simulates a basic banking system for managing multiple user accounts. It features a menu-driven command-line interface that allows users to perform essential banking operations, such as:
+This is a **C language mini-project** that simulates a basic **banking system** for managing multiple user accounts. It features a **menu-driven command-line interface** that allows users to perform essential banking operations, such as:
 
--Creating new accounts
+- Creating new accounts  
+- Depositing and withdrawing funds  
+- Transferring money between accounts  
+- Checking balances  
+- Viewing recent transaction history  
+- Saving and loading account data using files  
 
--Depositing and withdrawing funds
+Account information is organized using **structures** and stored dynamically via a **singly linked list (SLL)**. Each account maintains a separate transaction history using **nested structures**, improving clarity and scalability.  
 
--Transferring money between accounts
+The system supports **persistent data storage** using file handling, ensuring that user data is retained across multiple sessions.  
 
--Checking balances
-
--Viewing recent transaction history
-
--Saving and loading account data using files
-
-Account information is organized using structures and stored dynamically via a singly linked list (SLL). Each account maintains a separate transaction history using nested structures, improving clarity and scalability.
-
-The system supports persistent data storage using file handling, ensuring that user data is retained across multiple sessions.
-
-This project demonstrates key programming concepts such as modular code organization, structure pointers, file I/O, and user-defined functions, making it a practical exercise in real-world C application development.
+This project demonstrates key programming concepts such as **modular code organization**, **structure pointers**, **file I/O**, and **user-defined functions**, making it a practical exercise in real-world C application development.
 
 ---
 
