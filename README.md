@@ -1,15 +1,25 @@
 # 💳 Bank Management System
 
 ## 📌 Description:
-This is a mini project developed in **C language** as part of coursework. It simulates a **simple banking system**, allowing operations such as:
+This is a C language mini-project that simulates a basic banking system for managing multiple user accounts. It features a menu-driven command-line interface that allows users to perform essential banking operations, such as:
 
-- Creating accounts
-- Depositing and withdrawing money
-- Viewing account details and transaction history
-- Transferring money between accounts
-- Saving and retrieving account data from a file
+-Creating new accounts
 
-The project uses **structures**, **structure pointers**, **single linked lists (SLL)**, and **file handling** to manage account data efficiently.
+-Depositing and withdrawing funds
+
+-Transferring money between accounts
+
+-Checking balances
+
+-Viewing recent transaction history
+
+-Saving and loading account data using files
+
+Account information is organized using structures and stored dynamically via a singly linked list (SLL). Each account maintains a separate transaction history using nested structures, improving clarity and scalability.
+
+The system supports persistent data storage using file handling, ensuring that user data is retained across multiple sessions.
+
+This project demonstrates key programming concepts such as modular code organization, structure pointers, file I/O, and user-defined functions, making it a practical exercise in real-world C application development.
 
 ---
 
@@ -66,6 +76,19 @@ Q/q : Quit application
 ```
 
 ---
+## 🧪 Sample Input/Output
+
+```txt
+==================================== BANK MANAGEMENT SYSTEM ====================================
+c: Create account	h: Transaction history	w: Withdraw
+d: Deposit		b: Balance enquiry	t: Transfer
+e: Display accounts	s: Save to file		f: Find account
+x: Delete Account	q: Quit
+Enter choice: 
+
+```
+
+---
 
 ## 📂 Project Structure:
 
@@ -79,6 +102,30 @@ C_Mini/
 ```
 
 ---
+## 📐 Data Structure Overview
+
+```mermaid
+classDiagram
+    class Account {
+        long long account_number
+        char name[50]
+        float balance
+        char** contacts
+        int contact_count
+        Transaction transactions[5]
+        int transaction_count
+        Account* next
+    }
+
+    class Transaction {
+        unsigned int id
+        TransactionType type
+        float amount
+    }
+
+    Account --> Transaction
+```
+---
 
 ## 📎 Notes:
 
@@ -90,6 +137,19 @@ C_Mini/
 - File-based storage ensures **data is persistent** across runs.
 
 ---
+## 🌱 Future Enhancements
 
-## 📑 Authors:
-- Sai Manideep
+✨ Add login authentication  
+✨ Support interest calculation  
+✨ Export data as CSV  
+✨ GUI version using C++/GTK  
+
+---
+## 👨‍💻 Author
+
+- 🎓 Developed by: *Ch Sai Manideep*
+- 🏫 Mini Project
+- 🎯 Tech: C language, File Handling, Linked Lists, Pointers
+
+---
+
